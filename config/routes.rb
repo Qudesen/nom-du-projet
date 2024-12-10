@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   # 
-  resources :cars do
-
+  resources :cars, except: [:destroy, :edit, :update] do
+    
   end
 
 end
